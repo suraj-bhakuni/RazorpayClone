@@ -22,8 +22,8 @@
 
       .corefeaturesection{
         background-size: 100% 100%;
-        padding-top: 12%;
-        padding-bottom: 12%;
+        padding-top: 12rem;
+        padding-bottom: 12rem;
       }
       .ctaSection{
         background-size: 100% 100%;
@@ -148,7 +148,7 @@
     
     <section class="relative bg-deepBlue ">
 
-        <div class="w-10/12 max-w-[1080px] flex flex-row justify-beteen items-center mx-auto ">
+        <div class="w-10/12 max-w-[1080px] flex flex-col lg:flex-row justify-beteen items-center mx-auto ">
             <!--Left Part-->
             <div class="space-y-8">
                 <h1 class="font-mullish font-extrabold text-[40px] text-white leading-[1.2]">
@@ -174,7 +174,7 @@
         <!--Triangular img -->
         <div class="w-[103%] absolute left-0 right-0 overflow-x-hidden">
             <img src="./images/hero-shape.svg" 
-            class="w-fill object-fill"
+            class="w-full object-fill"
             alt="">
         </div>
 
@@ -202,7 +202,8 @@
 
             <!--Heading-->
 
-            <h1 class="font-mullish text-center text-2xl leading-[1.2] font-extrabold">Accept Payments with Razorpay Payment Suite</h1>
+            <h1 class="font-mullish text-center text-2xl leading-[1.2] font-extrabold hidden md:block">Accept Payments with Razorpay Payment Suite</h1>
+            <h1 class="font-mullish text-center text-5xl leading-[1.2] font-extrabold md:hidden">Explore Razorpay Payment Suite</h1>
 
             <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
 
@@ -244,8 +245,8 @@
                     </ul>
 
                     <!--button and  hyperlink-->
-                    <div class="flex flex-row items-center space-x-4">
-                        <button class="flex flex-row bg-lightBlue w-fit text-white py-[14px] px-[18px] rounded-md
+                    <div class="flex flex-col-reverse md:flex-row items-center space-x-4 ">
+                        <button class="flex flex-row bg-lightBlue w-full md:w-fit justify-center text-white py-[14px] px-[18px] rounded-md
                         font-mullish font-bold hover:bg-lightBlue500 translate-all duration-200">Sign Up Now
                         
                         <svg
@@ -260,8 +261,8 @@
                         </svg> 
                         
                         </button>
-                        
-                        <div class="flex items-center cursor-pointer group">
+                        <!--Hyperlink-->
+                        <div class="flex self-start md:self-center cursor-pointer group">
                             <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know more</a>
                             <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 
                              group-hover:text-grayBlue transition-all duration-200"></i>
@@ -269,13 +270,13 @@
                     </div>
 
                     <img src="./images/payment-suite.png" alt=""
-                    class="max-w-[600px] absolute right-0 bottom-0">
+                    class="max-w-[600px] absolute right-0 bottom-0 hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block">
 
                 </div>
             </div>
 
 
-            <div class="w-full grid grid-cols-3 gap-4 mt-10">
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
                 <!--Box1-->
                 <div class="w-full min-h-[15rem] relative cursor-pointer">
 
@@ -680,10 +681,10 @@
                             </li>
                         </ul>
 
-                        <div class="flex flex-row w-full items-center space-x-4">
+                        <div class="flex flex-col-reverse md:flex-row w-full items-center space-x-4 ">
                             <button class="relative bg-lightBlue flex items-center justify-start
                             text-white py-[14px] px-[18px] md:pr-[90px] rounded-md font-mullish font-bold
-                            hover:bg-lightBlue500 transition-all duration-200">
+                            hover:bg-lightBlue500 transition-all duration-200 self-stretch md:w-fit sm:justify-center">
                                 Sign Up
                                 
                                 <!--For tilted greenLight div and arrow-->
@@ -705,9 +706,9 @@
                             </button>
 
                             <!--Hyperlink and know more-->
-                            <div class="flex flex-row items-center cursor-pointer group">
+                            <div class="flex flex-row items-center cursor-pointer group self-start md:self-center">
                                 <a href="#" 
-                                class="font-mullish text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">Know more</a>
+                                class="font-mullish font-extrabold text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">Know more</a>
                                 <i
                                 data-feather="chevron-right"
                                 class="w-5 h-5 text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">
@@ -720,12 +721,12 @@
                     <!--Background image-->
                     <img src="./images/buisness-banking.png" alt=""
                     loading="lazy"
-                    class="max-w-[600px] absolute right-0 bottom-0 z-4 ">
+                    class="max-w-[600px] absolute right-0 bottom-0 z-4 hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block">
 
                 </div>
 
                 <!--Card box-->
-                <div class="grid grid-cols-3 w-full gap-4 my-14">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4 my-14">
                     
                     <!--box-1-->
 
@@ -919,8 +920,8 @@
                 </div>
 
                 <!--Demo box-->
-                <div class="w-full flex flex-row items-center justify-evenly border border-slate-700
-                mb-24 gap-y-6  relative rounded-md p-8">
+                <div class="w-full items-center justify-evenly border border-slate-700
+                mb-24 gap-y-6  relative rounded-md p-8 hidden md:flex md:flex-col lg:flex-row lg:flex">
                   
                   <p class="font-mullish text-white text-xl">Check out the live demo to learn how RazorpayX works.
                       <span class="font-bold"> No sign-up required!</span>
@@ -945,7 +946,7 @@
                                   ></path>
                                 </svg>
                               </div>
-                          </button>
+                  </button>
 
               </div>
 
@@ -966,7 +967,7 @@
         <img src="./images/feature-section1-dottedrows.png" alt=""
         class="absolute w-[233px] -right-[3.5rem] -top-[6rem] z-10">
 
-        <div class="w-full grid grid-cols-3 gap-y-10 gap-x-4 relative z-[100]">
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-y-10 gap-x-4 relative z-[100] ">
 
           <!--Item 1-->
           <div class="relative flex items-center z-0">
@@ -1100,8 +1101,8 @@
         <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
         <p class="font-mullish text-center max-w-[450px] text-white mx-auto">Empower your business with all the right tools to accept online payments and provide the best customer experience</p>
         
-        <!--For creating grid-->
-        <div class="grid grid-cols-4 gap-[2rem] mt-8">
+        <!--Features Grid-->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2rem] mt-8">
           <!--Card 1-->
           <div>
 
@@ -1177,9 +1178,9 @@
 
     <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-[100]">
 
-      <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-row">
+      <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-col md:flex-row ">
         <!--Left Part-->
-        <div class="flex flex-col justify-center max-w-[calc(100%-500px)]">
+        <div class="flex flex-col justify-center w-full md:max-w-[calc(100%-500px)]">
           <h2 class="font-mullish font-bold text-2xl text-deepBlueHead">Join the 50,00,000+ businesses using Razorpay</h2>
           <div class="w-6 h-1 bg-greenLight my-4 mb-10"></div>
           <p class="font-mullish opacity-80">We make it easier for you to focus on building great products while we work on simplifying your payments. 
@@ -1188,7 +1189,7 @@
         </div>
 
         <!--Right Part-->
-        <div class="h-[500px] w-[500px] relative overflow-y-hidden">
+        <div class="h-[500px] w-[500px] relative overflow-y-hidden mx-auto">
           <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
           class="absolute w-full h-[150px] top-0 z-50"></div><!--For applying opacity gradient on top of img-->
 
@@ -1235,7 +1236,7 @@
 
 
         <!--Image and Text part-->
-        <div class="flex flex-row max-w-[960px] items-center mx-auto my-20 space-x-[10rem]">
+        <div class="flex flex-col xl:flex-row max-w-[960px] items-center mx-auto my-20 space-x-[10rem]">
           <!--image[Left Part]-->
           <img src="./images/testimonial.jpg" alt=""
           height="320px"
@@ -1243,18 +1244,19 @@
           class="rounded-xl">
 
           <!--Right Part-->
-          <div class="max-w-[400px]">
+          <div class="max-w-[400px] flex flex-col">
             <img src="./images/quotes.svg" alt=""
             width="35px"
             height="40px"
-            class="-mb-2">
-            <p class="font-mullish text-3xl font-extralight">Readymade Closed Wallet Solution For Quick Refunds</p>
-            <a href="#" class="text-grayText italic underline">Learn More</a>
-            <h3 class="font-mullish font-extrabold text-2xl">Lorem Ipsum</h3>
-            <p class="font-mullish font-medium">CEO, XYZ Engineering Company</p>
+            class="-mb-2 xl:order-1">
+            <p class="font-mullish text-3xl font-extralight xl:order-1">Readymade Closed Wallet Solution For Quick Refunds</p>
+            <a href="#" class="text-grayText italic underline xl:order-1">Learn More</a>
+            <h3 class="font-mullish font-extrabold text-2xl -order-1 xl:order-1">Lorem Ipsum</h3>
+            <p class="font-mullish font-medium -order-1 xl:order-1 ">CEO, XYZ Engineering Company</p>
             <img src="./images/fake-company-logo.png" alt=""
             width="80px"
-            height="40px">
+            height="40px"
+            class=" -order-1 xl:order-1">
           </div>
         </div>
 
@@ -1325,7 +1327,7 @@
         <img src="./images/ctaImg.svg" alt=""
         width="240px"
         height="282px"
-        class="mt-16 pt-3">
+        class="mt-16 pt-3 hidden lg:block">
       </div>
 
     </section>
