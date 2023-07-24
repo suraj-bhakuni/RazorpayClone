@@ -5,6 +5,8 @@ Key Features:
 
 Stunning Design: The project focuses on replicating Razorpay's user interface, embracing its vibrant colors, sleek layouts, and captivating typography.
 
+Responsive Layout: Ensuring the Razorpay clone is fully responsive and adaptable to various screen sizes, including desktops, tablets, and mobile devices.
+
 User-friendly Navigation: Implementing an intuitive navigation system, similar to Razorpay, allowing seamless access to different sections of the website.
 
 Tailwind CSS Magic: Employing the efficiency of Tailwind CSS's utility-first approach to style the website efficiently and with consistent aesthetics.
